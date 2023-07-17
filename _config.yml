@@ -1,0 +1,38 @@
+repository: https://github.com/MPSLab-ASU/Project_Page_Template
+# Personal info
+Project_name: MPS-LAB 
+
+# Additional icon links
+
+favicon: images/fav.ico
+
+# Projects Section
+# Experience Section
+# Education Section
+# More Section
+  
+# Footer
+footer_show_references: true
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+
+plugins:
+  - jekyll-seo-tag
+
+markdown: kramdown
+permalink: pretty
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  "README.md",
+  ]
