@@ -1,21 +1,33 @@
 repository: https://github.com/MPSLab-ASU/Project_Page_Template
 # Personal info
-Project_name: MPS-LAB 
+project_name: MPS-LAB Project Template
+
+organization: Arizona State University 
+sub_organization: School of Computing and Augmented Intelligence 
+
+
+paper_pdf: https://dl.acm.org/doi/pdf/10.1145/3358198
+# supplementary_pdf: Supplementary PDF here
+code: https://github.com/MPSLab-ASU/Project_Page_Template
+arXiv : https://arxiv.org/abs/1512.01274
 
 # Additional icon links
 
-favicon: images/fav.ico
+favicon: images/MPS_Lab.ico
 
-# Projects Section
-# Experience Section
-# Education Section
-# More Section
+main_media:
+  - source: https://labs.engineering.asu.edu/mps-lab/wp-content/uploads/sites/8/2019/12/dataflow-accelerators-768x251.png
+  - caption: Executing applications on dataflow accelerators require explicit management of computational, communication, and memory resource
+
+
   
 # Footer
 footer_show_references: true
 
-# Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+#sass
+sass:
+  sass_dir: _lib
+  style: compressed
 
 plugins:
   - jekyll-seo-tag

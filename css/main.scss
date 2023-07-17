@@ -1,0 +1,101 @@
+---
+---
+
+$primary-background: #FFFF;
+$secondry-background: #ECECEC;
+
+$secondry-font:#696969;
+
+body{
+    background: $primary-background;
+}
+
+.abstract{
+    // Positions
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    // Sizing
+    width: 80%;
+    // Text styles
+    text-align: justify;
+    text-justify: inter-word;
+    h2{
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.component-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.md-block {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    h1{
+        font-size: 1.7em;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+}
+
+.authors{
+    display: flex;
+    justify-content: center;
+    li{
+        border: 0;
+    }
+    a, a:hover, a:visited, a:active {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.authors-list{
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+    a { 
+        color: #239DEE;
+        text-decoration: none; 
+    }
+        li {
+            &:not(:last-child):after {
+                content: " , ";
+            }
+        }
+}
+
+.resource-list{
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+    a { 
+        text-decoration: none; 
+    }
+}
+
+.org-list{
+    li{
+        color: $secondry-font;
+    }
+}
+
+.btn-darker{
+    background-color: #2F2F2F;
+}
