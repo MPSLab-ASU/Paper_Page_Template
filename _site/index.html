@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MPS-LAB Project Template</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+</head>
+  <body>
+    <nav class="navbar fixed-top navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+           <a class="navbar-brand" href="https://labs.engineering.asu.edu/mps-lab/"><img src="/images/mps_logo_nobg.png" alt="" width="130"  class="d-inline-block align-text-top"></a> 
+          </a>
+        </div>
+      </nav>
+
+    <!-- As a heading -->
+
+<div class="container" style="margin-top:5rem;">
+
+    <div id="Header">
+        <h1 class="display-1 page-title">MPS-LAB Project Template</h1>
+        <ul class="authors-list list-inline">
+            
+                <li class="list-inline-item"><a href="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    Vinayak Sharma*</a></li>
+            
+                <li class="list-inline-item"><a href="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    Shail Dave</a></li>
+            
+        </ul>
+        <figcaption class="blockquote-footer text-center">
+            * Indicates Primary Authors 
+        </figcaption>
+
+        <ul class="org-list list-unstyled text-center"><li>School of Computing and Augmented Intelligence</li><li>Arizona State University</li></ul>   
+        
+        <ul class="resource-list list-inline"><li><a role="button" href="https://dl.acm.org/doi/pdf/10.1145/3358198" class="btn btn-primary rounded-pill">
+                    <i class="fa fa-file-pdf-o"></i><b> Paper</b> 
+                </a> &nbsp; &nbsp; </li><li><a role="button" href="https://github.com/MPSLab-ASU/Project_Page_Template" class="btn btn-secondary rounded-pill" style="background-color: #242424;">
+                    <i class="devicon-github-original"></i><b> Code</b> 
+                </a> &nbsp; &nbsp; </li><li><a role="button" href="https://arxiv.org/abs/1512.01274" class="btn btn-danger rounded-pill" style="background-color: #B31B1B">
+                    <i class="ai ai-arxiv-square"></i> <b> ArXiv</b> 
+                </a> &nbsp; &nbsp; </li></ul>
+    </div>
+
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <div class="abstract-text">
+            
+            <p>We present DeepSIM, a generative model for conditional image manipulation based on a single image. We find that extensive augmentation is key for enabling single image training, and incorporate the use of thin-plate-spline (TPS) as an effective augmentation. Our network learns to map between a primitive representation of the image to the image itself. The choice of a primitive representation has an impact on the ease and expressiveness of the manipulations and can be automatic (e.g. edges), manual (e.g. segmentation) or hybrid such as edges on top of segmentations. At manipulation time, our generator allows for making complex image changes by modifying the primitive input representation and mapping it through the network. Our method is shown to achieve remarkable performance on image manipulation tasks.</p>
+
+        </div>
+    </div><div class="media">
+        <figure class="figure">
+            <img src="https://labs.engineering.asu.edu/mps-lab/wp-content/uploads/sites/8/2019/12/dataflow-accelerators-768x251.png" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption"><b>Figure:</b> Executing applications on dataflow accelerators require explicit management of computational, communication, and memory resource</figcaption>
+        </figure>
+    </div><div id="Media_Carousel">
+        <hr class="dotted">
+        <h2 class="component-title">Important Figures</h2>
+        <div id="figureCarosel" class="carousel carousel-dark slide" data-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+            <div class="media">
+                <figure>
+                    <img src="/images/stock1.jpeg" class="figure-img img-fluid rounded">
+                    <figcaption><b>Figure: </b><p>Random Caption 1</p>
+</figcaption>
+                </figure>
+            </div>
+            </div>
+            
+            <div class="carousel-item ">
+            <div class="media">
+                <figure>
+                    <img src="/images/stock2.jpg" class="figure-img img-fluid rounded">
+                    <figcaption><b>Figure: </b><p>Random Caption 2 with <strong>bold</strong> text</p>
+</figcaption>
+                </figure>
+            </div>
+            </div>
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#figureCarosel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#figureCarosel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+    <div id="Components">
+        <hr class="dotted">
+            <h2 class="component-title">Project Details</h2>
+            <div class="md-block" markdown=1>
+                
+                
+<h2 id="math-demo">Math Demo</h2>
+<p><script type="math/tex">\alpha = \beta</script></p>
+
+<h2 id="normal-code">Normal Code</h2>
+<p>This is an academic paper project page template.</p>
+
+<p>Example project pages built using this template are:</p>
+<ul>
+  <li>https://www.vision.huji.ac.il/deepsim/</li>
+  <li>https://www.vision.huji.ac.il/3d_ads/</li>
+  <li>https://www.vision.huji.ac.il/ssrl_ad/</li>
+  <li>https://www.vision.huji.ac.il/conffusion/</li>
+</ul>
+
+<h2 id="start-using-the-template">Start using the template</h2>
+<p>To start using the template click on <code class="highlighter-rouge">Use this Template</code>.</p>
+
+<p>The template uses html for controlling the content and css for controlling the style. 
+To edit the websites contents edit the <code class="highlighter-rouge">index.html</code> file. It contains different HTML “building blocks”, use whichever ones you need and comment out the rest.</p>
+
+<p><strong>IMPORTANT!</strong> Make sure to replace the <code class="highlighter-rouge">favicon.ico</code> under <code class="highlighter-rouge">static/images/</code> with one of your own, otherwise your favicon is going to be a dreambooth image of me.</p>
+
+<h2 id="components">Components</h2>
+<ul>
+  <li>Teaser video</li>
+  <li>Images Carousel</li>
+  <li>Youtube embedding</li>
+  <li>Video Carousel</li>
+  <li>PDF Poster</li>
+  <li>Bibtex citation</li>
+</ul>
+
+<h2 id="tips">Tips:</h2>
+<ul>
+  <li>The <code class="highlighter-rouge">index.html</code> file contains comments instructing you what to replace, you should follow these comments.</li>
+  <li>The <code class="highlighter-rouge">meta</code> tags in the <code class="highlighter-rouge">index.html</code> file are used to provide metadata about your paper 
+(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)</li>
+  <li>The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load.</li>
+  <li>All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use <a href="https://tinypng.com">TinyPNG</a>, for videos you can need to find the tradeoff between size and quality.</li>
+  <li>When using large video files (larger than 10MB), it’s better to use youtube for hosting the video as serving the video from the website can take time.</li>
+  <li>Using a tracker can help you analyze the traffic and see where users came from. <a href="https://statcounter.com">statcounter</a> is a free, easy to use tracker that takes under 5 minutes to set up.</li>
+  <li>This project page can also be made into a github pages website.</li>
+  <li>Replace the favicon to one of your choosing (the default one is of the Hebrew University).</li>
+  <li>Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at <a href="https://pages.cs.huji.ac.il/eliahu-horwitz/">https://pages.cs.huji.ac.il/eliahu-horwitz/</a></li>
+</ul>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>Parts of this project page were adopted from the <a href="https://nerfies.github.io/">Nerfies</a> page.</p>
+
+<h2 id="website-license">Website License</h2>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+            </div>
+    </div>
+    
+    <hr class="dotted">
+    <div id="BibTex">
+            <h2>Bibtex</h2>
+            <div class="bibtex md-block" markdown=1>
+                
+                <pre><code class="language-bib">@book{ruby,
+  title     = {The Ruby Programming Language},
+  author    = {Flanagan, David and Matsumoto, Yukihiro},
+  year      = {2008},
+  publisher = {O'Reilly Media}
+}
+</code></pre>
+
+            </div>
+    </div>
+    <hr>
+</div>
+
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" data-bs-scroll="true" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Author Details</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-group authors">
+            
+                <li class="list-group-item">
+                    <div class="card text-center mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">Vinayak Sharma</h6><span class="badge bg-secondary">Primary</span><ul class="org-list list-unstyled text-center"><li>MS in CS</li><li>School of Computing and Augmented Intelligence</li><li>Arizona State University</li></ul>
+                        </div>
+                        <div class="card-footer bg-transparent"><a href="mailto:vsharm87@asu.edu"><i class="fa fa-envelope-o"></i></a>&nbsp; &nbsp;<a href="https://www.linkedin.com/in/vinayak19th"><i class="devicon-linkedin-plain colored"></i></a>&nbsp; &nbsp;<a href="https://github.com/vinayak19th"><i class="devicon-github-plain colored"></i></a>&nbsp; &nbsp;<a href="vinayak19th.github.io"><i class="fa fa-link"></i></a>&nbsp; &nbsp;</div>
+                    </div>
+                </li>
+            
+                <li class="list-group-item">
+                    <div class="card text-center mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">Shail Dave</h6><ul class="org-list list-unstyled text-center"><li>PhD</li><li>School of Computing and Augmented Intelligence</li><li>Arizona State University</li></ul>
+                        </div>
+                        <div class="card-footer bg-transparent"><a href="mailto:Shail.Dave@asu.edu"><i class="fa fa-envelope-o"></i></a>&nbsp; &nbsp;<a href="https://www.linkedin.com/in/daveshail"><i class="devicon-linkedin-plain colored"></i></a>&nbsp; &nbsp;<a href="https://github.com/shail-dave"><i class="devicon-github-plain colored"></i></a>&nbsp; &nbsp;<a href="https://scholar.google.com/citations?hl=en&user=SVft2R0AAAAJ&view_op=list_works"><i class="ai ai-google-scholar-square"></i></a>&nbsp; &nbsp;<a href="https://sites.google.com/view/shail/"><i class="fa fa-link"></i></a>&nbsp; &nbsp;</div>
+                    </div>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © All content belongs to the authors:
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+    <!-- Bootstrap Imports -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> 
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </body>
+</html>
