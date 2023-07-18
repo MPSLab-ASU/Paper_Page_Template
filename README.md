@@ -12,3 +12,5 @@ The files that need to be edited for any project are:
 * [project_components/abstract.md](./project_components/abstract.md)
 * [project_components/bibtex_ref.md](./project_components/bibtex_ref.md)
 * [project_components/description.md](./project_components/description.md)
+
+Everything else should generate automatically
