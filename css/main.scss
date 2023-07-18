@@ -2,7 +2,7 @@
 ---
 
 $primary-background: #FFFF;
-$secondry-background: #ECECEC;
+$secondry-background: #F5F5F5;
 
 $secondry-font:#696969;
 
@@ -10,24 +10,39 @@ body{
     background: $primary-background;
 }
 
+hr.dotted {
+    border: none;
+    border-top: 2px dotted #000000;
+    color: #fff;
+    width: 100%;
+}
+
 .abstract{
+    // Color
+    background-color: $secondry-background;
     // Positions
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    border-radius: 2rem;
     margin-bottom: 1rem;
-    margin-left: 10%;
-    // Sizing
-    width: 80%;
+    padding-top: 1rem;
+    border-radius: 1rem;
     // Text styles
-    text-align: justify;
-    text-justify: inter-word;
+    .abstract-text{
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        border-radius: 2rem;
+        margin-left: 15%;
+        // Sizing
+        width: 70%;
+        // Text styles
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    
     h2{
         text-align: center;
         margin-top: 0.5rem;
         margin-bottom: 1rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -39,8 +54,18 @@ body{
 }
 .component-title {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.figure-img{
+    height: 15rem;
 }
 
 .md-block {
@@ -98,4 +123,17 @@ body{
 
 .btn-darker{
     background-color: #2F2F2F;
+}
+
+#BibTex{
+    width: 70%;
+    margin-left: 15%;
+}
+.bibtex{
+    background-color: $secondry-background;
+    border-radius: 0.2rem ;
+    // Positions
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }

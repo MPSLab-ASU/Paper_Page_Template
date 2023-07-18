@@ -3,19 +3,11 @@ layout: default
 title: Home
 ---
 <!-- As a heading -->
-<nav class="navbar fixed-top navbar-light ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-     <a class="navbar-brand" href="https://labs.engineering.asu.edu/mps-lab/"><img src="{{site.url}}/images/mps_logo_nobg.png" alt="" width="130"  class="d-inline-block align-text-top"></a> 
-    </a>
-  </div>
-</nav>
 
 <div class="container" style="margin-top:5rem;">
 
     <div id="Header">
         <h1 class="display-1 page-title">{{site.project_name}}</h1>
-        
         <ul class="authors-list list-inline">
             {%for author in site.data.authors%}
                 <li class="list-inline-item"><a href="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -23,6 +15,9 @@ title: Home
                 </a></li>
             {%endfor%}
         </ul>
+        <figcaption class="blockquote-footer text-center">
+            * Indicates Primary Authors 
+        </figcaption>
 
         <ul class="org-list list-unstyled text-center">
             {%- if site.sub_organization -%}
@@ -32,7 +27,7 @@ title: Home
                 <li>{{site.organization}}</li>
             {%- endif -%}
         </ul>   
-
+        
         <ul class="resource-list list-inline">
             {%- if site.paper_pdf -%}
                 <li><a role="button" href="{{site.paper_pdf}}" class="btn btn-primary rounded-pill">
@@ -55,36 +50,74 @@ title: Home
                 </a> &nbsp; &nbsp; </li> 
             {%- endif -%}
         </ul>
-
-        <figcaption class="blockquote-footer text-end">
-            * Indicates Primary Authors 
-        </figcaption>
     </div>
+
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <div class="abstract-text">
+            {% capture content %}{% include_relative project_components/abstract.md %}{% endcapture %}
+            {{ content | markdownify }}
+        </div>
+    </div>    
+
     {%- if site.main_media -%}
-        <div class="video-container">
-            <iframe width="560" height="315" src="{{site.video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> 
+    <div class="media">
+        <figure class="figure">
+            <img src="{{site.main_media.source}}" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption"><b>Figure:</b> {{site.main_media.caption}}</figcaption>
+        </figure>
+    </div>
     {%- endif -%}
-    
+
+    <div id="Media_Carousel">
+        <hr class="dotted">
+        <h2 class="component-title">Important Figures</h2>
+        <div id="figureCarosel" class="carousel carousel-dark slide" data-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
+            {% for figure in site.data.figures %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <div class="media">
+                <figure>
+                    <img src="{{site.url}}/images/{{ figure.filename }}" class="figure-img img-fluid rounded">
+                    <figcaption><b>Figure: </b>{{ figure.caption | markdownify}}</figcaption>
+                </figure>
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#figureCarosel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#figureCarosel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
     <div id="Components">
-        <hr>
-            <div class="abstract">
-                <h2>Abstract</h2>
-                {% capture content %}{% include_relative project_components/abstract.md %}{% endcapture %}
-                {{ content | markdownify }}
-            </div>    
-        <hr>
+        <hr class="dotted">
             <h2 class="component-title">Project Details</h2>
             <div class="md-block" markdown=1>
                 {% capture content %}{% include_relative project_components/description.md %}{% endcapture %}
                 {{ content | markdownify }}
             </div>
-        <hr>
     </div>
+    
+    <hr class="dotted">
+    <div id="BibTex">
+            <h2>Bibtex</h2>
+            <div class="bibtex md-block" markdown=1>
+                {% capture content %}{% include_relative project_components/bibtex_ref.md %}{% endcapture %}
+                {{ content | markdownify }}
+            </div>
+    </div>
+    <hr>
 </div>
 
 
-{# Author Cards #}
+
 <div class="offcanvas offcanvas-end" tabindex="-1" data-bs-scroll="true" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
         <h5 id="offcanvasRightLabel">Author Details</h5>
