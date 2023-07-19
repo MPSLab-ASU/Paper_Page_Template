@@ -74,7 +74,7 @@ title: Home
     </div>
     {%- endif -%}
 
-    {%- if site.data.figures[1].name -%%}
+    {%- if site.data.figures[1].caption -%}
         <div id="Media_Carousel">
             <hr class="dotted">
             <h2 class="component-title">Important Figures</h2>
@@ -105,7 +105,7 @@ title: Home
 
     <div id="Components">
         <hr class="dotted">
-            <h2 class="component-title">paper Details</h2>
+            <h2 class="component-title">Paper Details</h2>
             <div class="md-block" markdown=1>
                 {% capture content %}{% include_relative paper_components/description.md %}{% endcapture %}
                 {{ content | markdownify }}
