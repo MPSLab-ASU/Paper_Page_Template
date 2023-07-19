@@ -7,7 +7,7 @@ title: Home
 <div class="container" style="margin-top:5rem;">
 
     <div id="Header">
-        <h1 class="display-1 page-title">{{site.project_name}}</h1>
+        <h1 class="display-1 page-title">{{site.paper_name}}</h1>
         <ul class="authors-list list-inline">
             {%for author in site.data.authors%}
                 <li class="list-inline-item"><a href="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -60,7 +60,7 @@ title: Home
     <div class="abstract">
         <h2>Abstract</h2>
         <div class="abstract-text">
-            {% capture content %}{% include_relative project_components/abstract.md %}{% endcapture %}
+            {% capture content %}{% include_relative paper_components/abstract.md %}{% endcapture %}
             {{ content | markdownify }}
         </div>
     </div>    
@@ -103,9 +103,9 @@ title: Home
 
     <div id="Components">
         <hr class="dotted">
-            <h2 class="component-title">Project Details</h2>
+            <h2 class="component-title">paper Details</h2>
             <div class="md-block" markdown=1>
-                {% capture content %}{% include_relative project_components/description.md %}{% endcapture %}
+                {% capture content %}{% include_relative paper_components/description.md %}{% endcapture %}
                 {{ content | markdownify }}
             </div>
     </div>
@@ -114,7 +114,7 @@ title: Home
     <div id="BibTex">
             <h2>Bibtex</h2>
             <div class="bibtex md-block" markdown=1>
-                {% capture content %}{% include_relative project_components/bibtex_ref.md %}{% endcapture %}
+                {% capture content %}{% include_relative paper_components/bibtex_ref.md %}{% endcapture %}
                 {{ content | markdownify }}
             </div>
     </div>
