@@ -1,7 +1,7 @@
 # Paper Page Template
 This repo creates a template for an academic paper page. It has been set up so that no HTML coding is required for a paper page. All configuration is done through markdown and yaml files.
 
-demo;  https://mpslab-asu.github.io/Paper_Page_Template/
+demo:  https://mpslab-asu.github.io/Paper_Page_Template/
 
 ## Requirements:
 You need to use docker and docker-compose to run this project. If you don't have them installed, follow the instructions [here](https://docs.docker.com/compose/install/).
@@ -19,7 +19,7 @@ Everything else should generate automatically.
 
 ---
 
-## General Instructions:
+## Modifing the template for your paper:
 * Any fields that you do not want to use must be commented out in the yaml files. This is done by adding a '#' at the beginning of the line. (Ex: ln 12 in [_config.yml](./_config.yml) which comments out the supplementary_pdf)
 
 
@@ -89,3 +89,28 @@ The [description.md](./paper_components/description.md) file should have the des
 * This is the only file that requires markdown. 
 * **Latex Math** is supported in this file.
 
+
+---
+## Hosting the Website:
+The web hosting is handled by GitHub Pages. The process is rather straight forward. 
+
+### **Step 1:** Create a Repository or Branch. 
+* If you the paper **does not have code or a repository**, create a new repository. 
+  * You can use the template option when creating the repo
+  ![](./docs/repo_template.png)
+  * Edit as per instructions above
+<br>
+* If you the paper **has a repository**, create a new branch in the repository. Preferable titled "pages"
+  * Clone the repo and that branch and remove all existing code. 
+  * Copy all files from this repo into the new branch and edit as per instructions above
+
+### **Step 2:** Start git hosting. 
+1. Go to the settings page of the repo:
+![](./docs/settings.png)
+2. Scroll down to the GitHub Pages section and select the branch you want to host from.
+![](./docs/settings_list.png)
+3. Select the host from branch option and save.
+![](./docs/pages.png)
+
+
+## You're Done !!!
