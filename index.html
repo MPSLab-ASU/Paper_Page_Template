@@ -74,32 +74,34 @@ title: Home
     </div>
     {%- endif -%}
 
-    <div id="Media_Carousel">
-        <hr class="dotted">
-        <h2 class="component-title">Important Figures</h2>
-        <div id="figureCarosel" class="carousel carousel-dark slide" data-ride="carousel" data-bs-interval="false">
-        <div class="carousel-inner">
-            {% for figure in site.data.figures %}
-            <div class="carousel-item {% if forloop.first %}active{% endif %}">
-            <div class="media">
-                <figure>
-                    <img src="assets/images/{{figure.filename}}" class="figure-img img-fluid rounded">
-                    <figcaption><b>Figure: </b>{{ figure.caption | markdownify}}</figcaption>
-                </figure>
+    {%- if site.data.figures[1].name -%%}
+        <div id="Media_Carousel">
+            <hr class="dotted">
+            <h2 class="component-title">Important Figures</h2>
+            <div id="figureCarosel" class="carousel carousel-dark slide" data-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+                {% for figure in site.data.figures %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                <div class="media">
+                    <figure>
+                        <img src="assets/images/{{figure.filename}}" class="figure-img img-fluid rounded">
+                        <figcaption><b>Figure: </b>{{ figure.caption | markdownify}}</figcaption>
+                    </figure>
+                </div>
+                </div>
+                {% endfor %}
             </div>
-            </div>
-            {% endfor %}
+            <button class="carousel-control-prev" type="button" data-bs-target="#figureCarosel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#figureCarosel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#figureCarosel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#figureCarosel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    </div>
+        </div>
+    {%- endif -%}
 
     <div id="Components">
         <hr class="dotted">
