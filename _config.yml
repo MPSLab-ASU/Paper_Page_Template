@@ -4,7 +4,7 @@ paper_name: "MPS-LAB Paper Page Template"
 
 organization: Arizona State University 
 sub_organization: School of Computing and Augmented Intelligence 
-
+preprint : True
 
 ######################## Paper Resources ########################################
 
