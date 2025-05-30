@@ -75,6 +75,18 @@ Each of these fields is optional. Any fields that are not used should be removed
 * The only fields represented on the main page are **name** and **primary**.
 * **primary** is meant to indicate major contributors, it shows as "*" on the main page and a badge on the author cards
 
+#### Supported Links for Authors:
+* **github** : The GitHub username of the author
+* **email** : The email address of the author
+* **linkedin** : The LinkedIn username of the author
+* **organization** : The organization that the author is associated with
+* **sub_organization** : The department that the author is associated with
+* **google_scholar** : The Google Scholar profile of the author
+* **website** : The personal website of the author
+* **position** : The position of the author (PhD, Postdoc, etc.)
+* **orcid** : The ORCID page Link 
+> Organization, sub_organization, and email are required fields.
+
 ---
 
 ## Markdown Files:

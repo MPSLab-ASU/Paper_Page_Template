@@ -160,6 +160,9 @@ title: Home
                             {%- if author.github -%}
                                 <a href="https://github.com/{{author.github}}"><i class="devicon-github-plain colored"></i></a>&nbsp; &nbsp; 
                             {%- endif -%}
+                            {%- if author.orcid -%}
+                                <a href="{{author.orcid}}"><i class="ai ai-orcid"></i></a>&nbsp; &nbsp; 
+                            {%- endif -%}
                             {%- if author.google_scholar -%}
                                 <a href="{{author.google_scholar}}"><i class="ai ai-google-scholar-square"></i></a>&nbsp; &nbsp; 
                             {%- endif -%}
