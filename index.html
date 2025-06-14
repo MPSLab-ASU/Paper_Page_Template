@@ -29,19 +29,14 @@ title: Home
         </ul>   
         
         <ul class="resource-list list-inline">
-            {%- if site.paper_pdf -%}
-                <li><a role="button" href="{{site.paper_pdf}}" rel="noopener" class="btn btn-primary rounded-pill">
-                    <i class="fa fa-file-pdf-o"></i><b> Paper</b> 
+            {%- if site.IEEE -%}
+                <li><a role="button" href="{{site.IEEE}}" class="btn btn-primary rounded-pill" style="border-color: #17445A;background-color: #17445A">
+                    <i class="ai ai-ieee-square"></i> <b> IEEE </b> 
                 </a> &nbsp; &nbsp; </li> 
             {%- endif -%}
-            {%- if site.supplementary_pdf -%}
-                <li><a role="button" href="{{site.supplementary_pdf}}" rel="noopener" class="btn btn-primary rounded-pill">
-                    <i class="far fa-file-pdf"></i><b> Paper</b> 
-                </a> &nbsp; &nbsp; </li> 
-            {%- endif -%}
-            {%- if site.code -%}
-                <li><a role="button" href="{{site.code}}" class="btn btn-secondary rounded-pill" style="background-color: #242424;">
-                    <i class="devicon-github-original"></i><b> Code</b> 
+            {%- if site.ACM -%}
+                <li><a role="button" href="{{site.ACM}}" class="btn btn-primary rounded-pill" style="border-color: #28568C;background-color: #28568C">
+                    <i class="ai ai-acm-square "></i> <b> ACM </b> 
                 </a> &nbsp; &nbsp; </li> 
             {%- endif -%}
             {%- if site.arXiv -%}
@@ -49,9 +44,19 @@ title: Home
                     <i class="ai ai-arxiv-square"></i> <b> ArXiv</b> 
                 </a> &nbsp; &nbsp; </li> 
             {%- endif -%}
-            {%- if site.IEEE -%}
-                <li><a role="button" href="{{site.IEEE}}" class="btn btn-primary rounded-pill" style="border-color: #17445A;background-color: #17445A">
-                    <i class="ai ai-ieee-square"></i> <b> IEEE </b> 
+            {%- if site.code -%}
+                <li><a role="button" href="{{site.code}}" class="btn btn-secondary rounded-pill" style="background-color: #242424;">
+                    <i class="devicon-github-original"></i><b> Code</b> 
+                </a> &nbsp; &nbsp; </li> 
+            {%- endif -%}
+            {%- if site.paper_pdf -%}
+                <li><a role="button" href="{{site.paper_pdf}}" class="btn btn-primary rounded-pill">
+                    <i class="fa fa-file-pdf-o"></i><b> Paper</b> 
+                </a> &nbsp; &nbsp; </li> 
+            {%- endif -%}
+            {%- if site.supplementary_pdf -%}
+                <li><a role="button" href="{{site.supplementary_pdf}}" class="btn btn-primary rounded-pill">
+                    <i class="far fa-file-pdf"></i><b> Paper</b> 
                 </a> &nbsp; &nbsp; </li> 
             {%- endif -%}
         </ul>
@@ -167,7 +172,7 @@ title: Home
                                 <a href="{{author.google_scholar}}"><i class="ai ai-google-scholar-square"></i></a>&nbsp; &nbsp; 
                             {%- endif -%}
                             {%- if author.website -%}
-                                <a href="{{author.website}}"><i class="fa fa-link"></i></a>&nbsp; &nbsp; 
+                                <a href="{{author.website}}"><i class="fa fa-globe"></i></a>&nbsp; &nbsp; 
                             {%- endif -%}
                         </div>
                     </div>

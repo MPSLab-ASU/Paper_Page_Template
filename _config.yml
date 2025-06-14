@@ -4,15 +4,16 @@ paper_name: "MPS-LAB Paper Page Template"
 
 organization: Arizona State University 
 sub_organization: School of Computing and Augmented Intelligence 
-preprint : True
+preprint : True # Set true if pre-print. False otherwise
 
 ######################## Paper Resources ########################################
 
-paper_pdf: https://dl.acm.org/doi/pdf/10.1145/3358198
+paper_pdf: https://dl.acm.org/doi/pdf/10.1145/3358198 # Main PDF Link here
 # supplementary_pdf: Supplementary PDF here
-code: https://github.com/MPSLab-ASU/Project_Page_Template
-arXiv : https://arxiv.org/abs/1512.01274
-IEEE: https://ieeexplore.ieee.org/document/9187262
+code: https://github.com/MPSLab-ASU/Project_Page_Template # GitHub link here
+arXiv : https://arxiv.org/abs/1512.01274 # ArXiV Publication Link Here
+IEEE: https://ieeexplore.ieee.org/document/9187262 # IEEE Publication Link Here
+#ACM: ACM Publication Link Here
 # Additional icon links
 
 favicon: assets/images/MPS_Lab.ico
