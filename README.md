@@ -37,8 +37,9 @@ The [_config.yaml](./_config.yml) file contains all the information about the pa
 * **paper_pdf** : The path to the pdf of the paper
 * **supplementary_pdf** : The path to the supplementary pdf of the paper
 * **code** : The path to the code for the paper (preferable GitHub)
-* **arXiv** : The path to the arXiv page for the paper
-* **IEEE** : The path to the IEEE page for the paper
+* **arXiv** : The link for the arXiv page for the paper
+* **IEEE** : The link for the IEEE page for the paper
+* **ACM** : The link for the ACM page for the paper
 * **favicon** : The path to the favicon for the paper page
   * All favicons must be .ico files. You can convert any image to a .ico file [here](https://cloudconvert.com/png-to-ico)
   * Make sure the is in the [assets/images](./assets/images) folder for GitHub pages compatibility
@@ -57,15 +58,16 @@ The [_data/figures.yml](./_data/figures.yml) file contains all the information a
 The [_data/authors.yml](./_data/authors.yml) file contains all the information about the authors for the paper. The format for the file is:
 
 ```yaml
-- name: Shail Dave
-  position: PhD 
-  github: shail-dave
-  email: Shail.Dave@asu.edu 
-  linkedin: daveshail
+- name: Vinayak Sharma
+  github: vinayak19th
+  linkedin: vinayak19th
+  email: vsharm87@asu.edu
+  position: PhD in CS
   organization: Arizona State University
   sub_organization: School of Computing and Augmented Intelligence
-  google_scholar: https://scholar.google.com/citations?hl=en&user=SVft2R0AAAAJ&view_op=list_works
-  website: https://sites.google.com/view/shail/
+  google_scholar: https://scholar.google.com/citations?user=r763skMAAAAJ&hl=en
+  orcid: https://orcid.org/0009-0009-5633-4003  
+  website: https://vinayak19th.github.io/
   primary: true
 ```
 
