@@ -88,7 +88,7 @@ Each of these fields is optional. Any fields that are not used should be removed
 * **position** : The position of the author (PhD, Postdoc, etc.)
 * **orcid** : The ORCID page Link 
 > Organization, sub_organization, and email are required fields.
-
+Full list of fields can be found in the [index.html](./index.html) file inside the div 'card-footer bg-transparent"
 ---
 
 ## Markdown Files:
